@@ -1,0 +1,118 @@
+
+<html !DOCTYPE>
+
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="//cdn.classlink.com/production/launchpad/resources/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png"
+        href="//cdn.classlink.com/production/launchpad/resources/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png"
+        href="//cdn.classlink.com/production/launchpad/resources/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="//cdn.classlink.com/production/launchpad/resources/images/favicon/manifest.json">
+    <link rel="mask-icon"
+        href="//cdn.classlink.com/production/launchpad/resources/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <title>Login</title>
+    <!-- ClassLink Stylesheet -->
+    <link href="https://cdn.classlink.com/beta/framework/stylesheets/clsheet.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.classlink.com/production/launchpad/css/genericlogin/style.css">
+    <!-- Open Sans Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href='https://cdn.classlink.com/production/public/libraries/fontawesome/css/all.min.css' rel='stylesheet' type='text/css'>
+    <script type = "text/javascript" >var IdConfig = {"resmodified":1580688306773,"urls":{"base":"https://launchpad.classlink.com","SchoolFinderApi":"https://myapps.classlink.io","cloudfronturls":{"clouddesktop":"//cdn.classlink.com/production/launchpad","deskiny":"//dcmtj5kp66sk8.cloudfront.net","userbucket":"//clouddrivecdn.classlink.com","launchpadcdn":"//filescdn.classlink.com","appicon":"//cdn.classlink.com/production/launchpad","launchpadwebcdn":"//cdn.classlink.com/production/launchpad","custombackgroundcdn":"//filescdn.classlink.com/resources/tenants","rosterserver_appicon":"//clouddrivecdn.classlink.com/oauthimg/"},"launchpadcdn":"//filescdn.classlink.com"},"user":{"default_language":"en"}};</script></head>
+<body class="">
+    <div id="toaster"></div>
+    <div class="left-bar">
+        <div>
+            <img class="logo-bg" src="//cdn.classlink.com/production/launchpad/img/genericlogin/cloud.svg"
+                alt="cloud logo"></img>
+            <img class="logo" src="//cdn.classlink.com/production/launchpad/img/genericlogin/ClassLink-Cloud-White.svg"
+                alt="Classlink logo"> </img>
+        </div>
+        <div class="title">ClassLink</div>
+    </div>
+    <div class="search-box-container" id="generic_login">
+        <div class="search-box">
+            <h1>Find your login page</h1>
+            <button class="button button-primary qc-button" onclick="window.open('/quickcard','_self')" title="Use QuickCard">
+                <i class="far fa-qrcode qr-icon"></i>
+                <span>Use QuickCard</span>
+            </button>
+            <div class="search-bar">
+                <input type="text" class="search-bar-input" />
+                <i  class="far fa-search fa-lg search-icon"></i>
+                <button class="close-dropdown" title="Close">
+                    <i class="fa fa-times"></i>
+                </button>
+                <button class="button-text label default use-location" title="Use my location">
+                    <span class="label-icon"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+                    <span>USE MY LOCATION</span>
+                </button>
+                <button class="button-text label location stop-location" title="Stop using my location">
+                    <span class="label-icon"><i class="fas fa-map-marker-alt-slash fa-lg"></i></span>
+                    <span>STOP USING LOCATION</span>
+                </button>
+                <div class="search-dropdown default">
+                    <div class="dropdown-list custom-scroll"></div>
+                </div>
+            </div>
+            <div class="unable-find-sch">
+                    Can't find your login page?
+                    <button class="btn-login" onclick="window.open('/login','_self')">
+                            <span ><i class="fas fa-sign-in"></i></span>
+                            <span class="label-text">Login here</span>
+                    </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-ctnr">
+        <div class="logo-container">
+            <img class="small-logo"
+                src="//cdn.classlink.com/production/launchpad/img/genericlogin/ClassLink-Cloud-White-OL.svg"
+                alt="Classlink logo" />
+            <div class="copyright">&copy 2019
+            </div>
+        </div>
+        <div class="foot-label">
+            <button class="button-text"
+                onclick="window.open('https://www.classlink.com/privacy')">PRIVACY POLICY</button>
+            <button class="button-text"
+                onclick="window.open('https://www.classlink.com/help/')">Help</button>
+            <button class="button-text"
+                onclick="window.open('https://www.classlink.com/cdncheck')">Browser Check</button>
+            <button class="button-text" onclick="window.open('/remotelogin','_self')">REMOTE LOGIN</button>
+            <button class="button-text"
+                onclick="window.open('/login','_self')">DIRECT LOGIN</button>
+        </div>
+        <div class="badge-ctnr">
+            <a role="button" href="https://apps.apple.com/us/app/classlink-launchpad/id524297631" target="_blank"><img
+                    class="small-badge"
+                    src="//cdn.classlink.com/production/launchpad/img/genericlogin/app-store-badge.png"
+                    alt="app store logo" /></a>
+            <a role="button"
+                href="https://play.google.com/store/apps/details?id=com.classlink.launchpad.android&hl=en_US"
+                target="_blank"><img class="small-badge"
+                    src="//cdn.classlink.com/production/launchpad/img/genericlogin/google-play-badge.png"
+                    alt="play store logo" /></a>
+        </div>
+    </div>
+    <script type="text/javascript"
+        src="//cdn.classlink.com/production/launchpad/resources/require/require.js?t=1580688306773"></script>
+    <script src="//cdn.classlink.com/production/launchpad/js/login_main_generic.js?t=1580688306773"></script>
+    
+    <!--    To be uncommented commented for live-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-44216814-1', 'classlink.com');
+        ga('send', 'pageview');
+    </script>
+    
+</body>
+
+</html>
